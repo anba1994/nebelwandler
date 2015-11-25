@@ -1,0 +1,9 @@
+.abstand {
+  margin-top: 50px;
+}
+div.circle {
+  border-radius: 50%;
+  background-image: images/anbalogo.png;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
