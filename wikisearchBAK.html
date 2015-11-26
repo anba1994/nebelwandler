@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>IBS Projekt 2015 - Wikipedia Suche</title>
+</head>
+
+<body>
+<h1>Wikipedia Suche IBS Projekt 2015</h1>
+<form id="wiki-search" action="http://de.wikipedia.org/wiki/Spezial:Suche" target="_blank">
+	<label for="search-input">Bitte geben Sie hier ihren Suchbegriff ein.</label><br/>
+	<input id="search-input" type="text" name="search" value="" /><input type="submit" value="Suchen"/><br/>
+    <fieldset>
+        <legend>Welche Suchmethode möchten Sie verwenden?</legend>
+        <input id="article-search" alt="Die Artikel Suche von Wikipedia verwenden." type="radio" name="go" onChange="document.getElementById('fulltext-search').checked = false;" checked/><label for="article-search">Artikel</label>
+        <input id="fulltext-search" type="radio" name="fulltext"  onChange="document.getElementById('article-search').checked = false;" /><label for="fulltext-search">Volltext</label>
+	</fieldset>
+</form>
+<a href="http://wave.webaim.org"
+      title="web accessibility evaluation tool">
+  <img height="32" width="88"
+          src="http://www.w3.org/WAI/wcag1AAA"></a>
+</body>
+</html>
