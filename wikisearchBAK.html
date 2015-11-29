@@ -1,24 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="IBS Projekt 2015">
+    <meta name="author" content="André Bach">
+
+    <title>Wikipedia Suche</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Webseite in der Cloud</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Über mich</a></li>
+            <li class="active"><a href="wikisearch.html">Wiki Suche</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+				<form action="http://de.wikipedia.org/wiki/Spezial:Suche">
+				  <fieldset>
+				    <legend>Suchen</legend>
+				    <label for="search-input">Bitte geben Sie hier ihren Suchbegriff ein.</label><br/>
+				    <input type="text"   name="search-input" id="search-input" value=""/>
+				    <input type="submit" name="go" value="Artikel"/>
+				    <input type="submit" name="fulltext" value="Volltext" />
+				  </fieldset>
+				</form>
+				<a href="http://wave.webaim.org/report#/https://anbapp3.cloudcontrolapp.com/wikisearch.html"
+				      title="Explanation of WCAG 2.0 Level Triple-A Conformance">
+				  <img height="32" width="88"
+				          src="http://www.w3.org/WAI/wcag2AAA"
+				          alt="Level Triple-A conformance,
+				          W3C WAI Web Content Accessibility Guidelines 2.0"></a>
+      </div>
+
+
+<footer class="navbar-bottom">
+	<hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-6 col-lg-6">
+            <p>&copy; 2015 André Bach</p>
+        </div>
+        <div class="col-md-6 col-xs-6 col-lg-6">
+      <p class="text-muted"><a href="https://www.github.com/anba1994/nebelwandler"><img src="images/github.png" alt="github logo" height="70"></a></p>
+      </div>
+        </div>
+      </div>
+    </footer>
+    </div><!-- /.container -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+
+
 <!doctype html>
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>IBS Projekt 2015 - Wikipedia Suche</title>
+<title>Wikipedia Suche</title>
 </head>
 
 <body>
 <h1>Wikipedia Suche IBS Projekt 2015</h1>
-<form id="wiki-search" action="http://de.wikipedia.org/wiki/Spezial:Suche" target="_blank">
-	<label for="search-input">Bitte geben Sie hier ihren Suchbegriff ein.</label><br/>
-	<input id="search-input" type="text" name="search" value="" /><input type="submit" value="Suchen"/><br/>
-    <fieldset>
-        <legend>Welche Suchmethode möchten Sie verwenden?</legend>
-        <input id="article-search" alt="Die Artikel Suche von Wikipedia verwenden." type="radio" name="go" onChange="document.getElementById('fulltext-search').checked = false;" checked/><label for="article-search">Artikel</label>
-        <input id="fulltext-search" type="radio" name="fulltext"  onChange="document.getElementById('article-search').checked = false;" /><label for="fulltext-search">Volltext</label>
-	</fieldset>
+
+<form action="http://de.wikipedia.org/wiki/Spezial:Suche">
+  <fieldset>
+    <legend>Suchen</legend>
+    <label for="search-input">Bitte geben Sie hier ihren Suchbegriff ein.</label><br/>
+    <input type="text"   name="search-input" id="search-input" value=""/>
+    <input type="submit" name="go" value="Artikel"/>
+    <input type="submit" name="fulltext" value="Volltext" />
+  </fieldset>
 </form>
-<a href="http://wave.webaim.org"
-      title="web accessibility evaluation tool">
+<a href="http://wave.webaim.org/report#/https://anbapp3.cloudcontrolapp.com/wikisearch.html"
+      title="Explanation of WCAG 2.0 Level Triple-A Conformance">
   <img height="32" width="88"
-          src="http://www.w3.org/WAI/wcag1AAA"></a>
+          src="http://www.w3.org/WAI/wcag2AAA"
+          alt="Level Triple-A conformance,
+          W3C WAI Web Content Accessibility Guidelines 2.0"></a>
+
 </body>
 </html>
